@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <main>
+        <body>
+            
+        </body>
+        <h1 id="title">Programming Languages Survey</h1>
+        <p id="description">What languages do you know and which ones would you like to?</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label><br>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+            <label id="email-label" for="email">Email</label><br>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required><br>
+            <label id="number-label" for="number">How many languages do you know?</label><br>
+            <input id="number" type="number" name="number" min="0" max="10" placeholder="0"><br>
+            <label id="dropdown-label" for="dropdown">What language is your preferred language?</label><br>
+            <select id="dropdown"  name="languages">
+                <option value="Python" selected>Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskell">Haskell</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                <option value="Javascript">Javascript</option>
+            </select><br>
+            <label>Do you want to learn more languages?</label><br>
+            <label id="yes-btn-label" for="yes-btn">Yes</label>
+            <input id="yes-btn" type="radio" name="radio-btn" value="Yes" checked>
+            <label id="no-btn-label" for="no-btn">No</label>
+            <input id="no-btn" type="radio" name="radio-btn" value="No">
+            <label id="not-sure-btn-label" for="not-sure-btn">Not sure</label>
+            <input id="not-sure-btn" type="radio" name="radio-btn" value="Not Sure"><br>
+            <label>Which other languages would you like to learn?</label><br>
+            <input id="python-check-box" name="python-check" type="checkbox" value="Python">
+            <label for="python-check">Python</label><br>
+            <input id="haskell-check-box" name="haskell-check" type="checkbox" value="Haskell">
+            <label for="haskell-check">Haskell</label><br>
+            <input id="html-check-box" name="haskell-check" type="checkbox" value="html">
+            <label for="haskell-check">html</label><br>
+            <input id="c-check-box" name="c-check" type="checkbox" value="C">
+            <label for="c-check">C</label><br>
+            <input id="c++-check-box" name="c++-check" type="checkbox" value="C++">
+            <label for="c++-check">C++</label><br>
+            <input id="javascript-check-box" name="javascript-check" type="checkbox" value="Javascript">
+            <label for="Javascript-check">Javascript</label><br>
+            <input id="prolog-check-box" name="prolog-check" type="checkbox" value="Prolog">
+            <label for="prolog-check">Prolog</label><br>
+            <br>
+            <label for="text-box">What other languages not listed are you interested in?</label><br>
+            <textarea id="comment-box" name="text-box" rows="10" cols="50" placeholder="Enter comments here..."></textarea><br>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</html>
